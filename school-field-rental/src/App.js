@@ -5,7 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Booking from './pages/Booking';
 
 
-const app = () =>{
+const App = () =>{
   return (
     <Router>
       <div>
