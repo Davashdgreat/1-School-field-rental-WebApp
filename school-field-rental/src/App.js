@@ -1,8 +1,9 @@
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import Booking from './pages/Booking';
+import Dashboard from './components/Dashboard';
+import Booking from './components/Booking';
 
 
 const App = () =>{
