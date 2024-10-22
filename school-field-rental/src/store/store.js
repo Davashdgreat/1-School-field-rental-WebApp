@@ -1,12 +1,13 @@
-import { createStore, combineReducers } from "redux";
-import authReducer from "./authSlice";
-import fieldReducer from "./fieldSlice.js"; // Another example for managing fields
+// src/store.js
+import { configureStore } from '@reduxjs/toolkit';
+import authReducer from './authSlice';
+import fieldReducer from './fieldSlice';
+import bookingReducer from './bookingSlice';
 
-const rootReducer = combineReducers({
-  auth: authReducer,
-  fields: fieldReducer,
+export const store = configureStore({
+  reducer: {
+    auth: authReducer,
+    fields: fieldReducer,
+    bookings: bookingReducer,
+  },
 });
-
-const store = createStore(rootReducer);
-
-export default store;
